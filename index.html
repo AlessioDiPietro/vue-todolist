@@ -35,13 +35,15 @@
         <main>
             <!-- list-todo -->
             <div class="box_todo">
-                <ul>
+                <ul v-if="toDoList.length > 0">
+
                     <li v-for="(item, index) in toDoList" class="clearfix">
                         <h4>{{item}}</h4>
                         <i @click="rimuovi(index)"class="fas fa-trash-alt"></i>    
                     </li>
-                        
+      
                 </ul>
+                <h2 v-else>PFF..Al MOMENTO NON HAI NULLA DA FARE.. 😒</h2>
             </div>
 
         </main>

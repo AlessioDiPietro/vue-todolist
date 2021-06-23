@@ -51,6 +51,9 @@ header img {
 }
 
 /* main */
+.box_todo {
+    text-align: center;
+}
 
 .box_todo li {
     list-style: none;
@@ -64,5 +67,6 @@ header img {
 
 .box_todo h4 {
     display: inline;
+    float: left;
     font-size: 20px;
 }

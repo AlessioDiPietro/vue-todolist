@@ -24,9 +24,9 @@
             <!-- box-input -->
             <div class="box_input">
 
-                <input type="text" placeholder="Cosa dovresti fare oggi?">
+                <input type="text" placeholder="Cosa dovresti fare oggi?" v-model="newToDo">
 
-                <button>Aggiungi</button>
+                <button @click="aggiungi">Aggiungi</button>
             </div>
 
         </header>

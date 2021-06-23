@@ -6,8 +6,9 @@
 const app = new Vue ({
 
     el : "#app",
-
+    
     data: {
+        newToDo: "",
         toDoList: [
             "Bere una pozione che ti fa rimpicciolire",
             "Mangiare una torta che ti fa ingrandire",
@@ -20,6 +21,10 @@ const app = new Vue ({
     methods: {
         rimuovi(indice){
             this.toDoList.splice(indice,1);
+        },
+        aggiungi(){
+            this.toDoList.push(this.newToDo);
+            this.newToDo = "";
         }
     }
 

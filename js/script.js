@@ -23,8 +23,10 @@ const app = new Vue ({
             this.toDoList.splice(indice,1);
         },
         aggiungi(){
-            this.toDoList.push(this.newToDo);
-            this.newToDo = "";
+            if (this.newToDo !== ""){
+                this.toDoList.push(this.newToDo);
+                this.newToDo = "";
+            }
         }
     }
 

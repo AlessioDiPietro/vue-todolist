@@ -8,7 +8,7 @@ const app = new Vue ({
     el : "#app",
 
     data: {
-        todolist: [
+        toDoList: [
             "Bere una pozione che ti fa rimpicciolire",
             "Mangiare una torta che ti fa ingrandire",
             "parlare con gli animali",
@@ -16,5 +16,13 @@ const app = new Vue ({
             "Esplorare il Paese delle Meraviglie",
             "Uccidere il Ciciarampa!"
         ]
+    },
+    methods: {
+        rimuovi(indice){
+            this.toDoList.splice(indice,1);
+        }
     }
+
+
+
 });
